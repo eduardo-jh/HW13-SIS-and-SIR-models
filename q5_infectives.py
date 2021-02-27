@@ -10,8 +10,8 @@ Created on Sat Feb 27 03:03:25 2021
 import numpy as np
 import matplotlib.pyplot as plt
 
-# d = 200  # time of infection, hours
-d = 20  # question 6
+d = 200  # time of infection, hours
+# d = 20  # question 6
 alpha = 0.001  #rate of infection 1/person-hr
 N = 400  # total population
 B = 1/d  # rate of recovery

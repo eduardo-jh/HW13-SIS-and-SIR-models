@@ -10,8 +10,9 @@ Created on Sat Feb 27 14:40:30 2021
 import numpy as np
 import matplotlib.pyplot as plt
 
-d = 24*14  # time of infection, hours
-alpha = 1.5e-4  #rate of infection 1/person-hr
+incub = 14  # incubation days
+d = 24*incub  # time of infection, hours
+alpha = 1.5e-4  # rate of infection 1/person-hr
 N = 500  # total population
 B = 1/d  # rate of recovery
 steps = 550  # time of simulation
@@ -39,5 +40,5 @@ plt.plot(t, R, 'g:', label='R')
 plt.legend(loc='best')
 plt.xlabel('Time (hours)')
 plt.ylabel('Population')
-plt.savefig('q8_SIR_coronavirus.png', dpi=300, bbox_inches='tight')
+# plt.savefig('q8_SIR_coronavirus.png', dpi=300, bbox_inches='tight')
 plt.show()

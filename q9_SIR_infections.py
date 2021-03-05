@@ -10,12 +10,12 @@ Created on Sat Feb 27 14:35:25 2021
 import numpy as np
 import matplotlib.pyplot as plt
 
-alpha = 1e-3  #rate of infection 1/person-hr
+alpha = 0.1  #rate of infection 1/person-hr
 N = 10  # total population
 B = 0.02  # rate of recovery
-steps = 550  # time of simulation
+steps = 100  # time of simulation
 dt = 1  # time step, hours
-I0 = 2
+I0 = 1
 S0 = N - I0
 
 t = np.linspace(0, steps, int(steps/dt)+1)
